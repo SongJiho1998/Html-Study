@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+    <style>
+
+        html{
+            background-color: whitesmoke;
+        }
+
+        #back1{
+            background-color: whitesmoke;
+            margin-left:auto; 
+            margin-right:auto;
+        }
+
+        #back2{
+            background-color: whitesmoke;
+            margin-left:auto; 
+            margin-right:auto;
+        }
+    </style>
+    <title>01_HTML_[과제]</title>
+    <div style="text-align : center;">
+        <head>
+            <img src = "resources/image/naver.png" width = "150px" height = "40" alt = "NAVER" title = "NAVER">
+        </head>
+    </div>
+
+    <body>
+        <fieldset id = "back1" style = "width: 500px">            
+            <legend>
+                <table border = "1">
+                    <tr>
+                        <td>
+                             <strong>회원가입 동의서</strong>
+                        </td>
+                    </tr>
+            </table>
+        </legend>
+            <label><strong>이용약관 동의(필수)</strong></label><br>
+            <textarea name = "content" cols = "50" rows = "8" style = "resize:none;">
+여러분을 환영합니다.
+네이버 서비스 및 제품(이하 '서비스')을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이
+용과 관련하여 네이버 서비스를 제공하는 네이버 주식
+회사(이하 '네이버')와 이를 이용하는 네이버 서비스
+회원(이하 '회원') 또는 비회원과의 관계를 설명하며,
+아울러 여러분의 네이버 서비스 이용에 도움이 될 수 
+있는 유익한 정보를 포함하고 있습니다.
+            </textarea><br>
+                <input type = "radio" name = "check"> 동의합니다. <input type = "radio" name = "check"> 동의하지않습니다.<br><br>
+                <label><strong>개인정보 수집 및 이용 동의(필수)</strong></label><br>
+            <textarea name = "content" cols = "50" rows = "8" style = "resize:none;">
+개인정보보호법에 따라 네이버에 회원가입 신청하시는 
+분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권
+및 동의 거부 시 불이익에 관한 사항을 안내 드리오니 
+자세히 읽은 후 동의하여 주시기 바랍니다.
+1. 수집하는 개인정보
+이용자는 회원가입을 하지 않아도 정보 검색, 뉴스 보기 등 대부분의 네이버 서비스를 회원과 동일하게 이용할 수 있습니다. 이용자가 메일, 캘린더, 카페, 블로그 등과 같이 개인화 혹은 회원제 서비스를 이용하기 위해 회원가입을 할 경우, 네이버는 서비스 이용을 위해 필요한 최소한의 개인정보를 수집합니다.
+            </textarea><br>
+                <input type = "radio" name = "check"> 동의합니다. <input type = "radio" name = "check"> 동의하지않습니다.<br><br>
+                <input type = "checkbox" id = "Allcheck" name = "check" value = "Allcheck">
+                <label for = "Allcheck"><strong>모두 동의합니다.</strong></label><br><br>
+                <button>취소</button> <button>확인</button>
+        </fieldset>
+
+      <hr style = "width: 525px">  
+
+        <fieldset id = "back2" style = "width: 500px">
+            <legend>
+                <table border = "1">
+                    <tr>
+                        <td>
+                             <strong>회원가입 양식</strong>
+                        </td>
+                    </tr>
+            </table>
+        </legend>
+
+            <label><strong>* 아이디</strong></label><br>
+            <input type = "text" name = "userId" placeholder = "영문 소문자, 숫자, 특수기호(_,-) 5~20" size = "37" minlength = "5" maxlength = "20"><br><br>
+
+            <label><strong>* 비밀번호</strong></strong></label><br>
+            <input type = "text" name = "userPwd" placeholder = "영문, 숫자, 특수문자 8~15" size = "37" minlength = "8" maxlength = "15"><br><br>
+
+            <label><strong>* 비밀번호 재확인</strong></label><br>
+            <input type = "text" name = "cuserPwd" placeholder = "영문, 숫자, 특수문자 8~15" size = "37" minlength = "8" maxlength = "15"><br><br>
+
+            <label><strong>* 이름</strong></label><br>
+            <input type = "text" name = "userName" size = "37"><br><br>
+
+            <label><strong>* 주민등록번호</strong></label><br>
+            <input type = "text" name = "userNo" size = "14"> - <input type = "text" name = "cuserPwd" size = "15"><br><br>
+
+            <label><strong>* 성별</strong></label><br>
+            <input type = "radio" name = "gender"> 선택안함 <input type = "radio" name = "gender"> 남자 <input type = "radio" name = "gender"> 여자<br><br>
+
+            <label><strong>* 생년월일</strong></label><br>
+            <input type = "date" name = "date"><br><br>
+
+            <label><strong>주소</strong></label><br>
+            <input type = "text" name = "userAddress" size = "37"><br><br>
+
+            <label><strong>우편번호</strong></label><br>
+            <input type = "text" name = "userPostCode" size = "21"> <button>우편번호찾기</button> <input type = "checkbox" name = "check">우편 수신 동의<br><br>
+
+            <label><strong>이메일</strong></label><br>
+            <input type = "text" name = "userEmail" size = "37"> <input type = "checkbox" name = "check">이메일 수신 동의<br><br>
+
+            <label><strong>휴대폰번호</strong></label><br>
+            <select>
+                <option>010</option>
+                <option>011</option>
+                <option>031</option>
+                <option>070</option>
+                <option>080</option>
+                <option>02</option>
+            </select> - <input type = "text" name = "userPhone" size = "6"> - <input type = "text" name = "userPhone" size = "6"> <input type = "checkbox" name = "check">문자 수신 동의<br><br>
+
+            <button>초기화</button> <button>가입하기</button>
+        </fieldset>
+        <div style = "text-align: center;">
+            <img src = "resources/image/final.png" width = "400px" height = "100" alt = "NAVER" title = "NAVER">
+        </div>
+    </body>
+
+</html>
+
+
